@@ -1,0 +1,107 @@
+.App {
+  font-size: 18px;
+}
+.wrap {
+  position: relative;
+  max-width: 1200px;
+  margin: 140px auto 0;
+}
+.card {
+  display: flex;
+  padding: 20px;
+  border: 1px solid #EDEEED;
+  box-shadow: 0 0 0 5px rgba(0,0,0,0.03);
+  flex-basis: calc(33.333% - 40px);
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 0 20px 20px 20px;
+  background: white;
+  position: relative;
+}
+.card-image {
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+  margin: 0 2rem 0 0;
+  border: 0;
+  padding: 0;
+  flex: 1 0 60%;
+  max-width: 60%;
+}
+.card-image img {
+  width: 100%;
+  margin: 0;
+}
+.card-comments {
+  flex: 1 0 40%;
+  max-width: 40%;
+}
+.comments-item {
+  display: flex;
+  align-items: center;
+}
+.comments-item-delete {
+  padding: 5px 15px 5px 5px;
+  cursor: pointer;
+}
+.button-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.card-title-top {
+  display: flex;
+  align-items: center;
+}
+.card-title-top p {
+  margin: 0 5px;
+}
+button {
+  border: 2px solid #f2f2f2;
+  background: none;
+  flex-basis: 48%;
+  display: inline-block;
+  line-height: 2;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  color: #125688;
+  transition: all 0.2s;
+  box-sizing: padding-box;
+}
+button hover {
+  border-color: #125688;
+  outline: 0;
+}
+input {
+  width: 100%;
+  border: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #f2f2f2;
+  outline: none;
+  resize: vertical;
+}
+.loader-styles {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+}
+
+.error-message {
+  position: absolute;
+  left: 40%;
+  top: -80px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  max-width: 240px;
+  color: #fff;
+  background: linear-gradient(20deg, rgba(255,0,0,1) 0%, rgba(200,0,0,1) 100%);
+  padding: 10px 20px;
+  border: 1px solid rgba(10, 10, 10, 0.25);
+}
+
+
